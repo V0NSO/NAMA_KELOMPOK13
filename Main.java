@@ -54,28 +54,7 @@ public class Main {
         }
 
         System.out.println(tanggal+"/03/2022");
-//         if(tanggal> 31){
-//             System.out.println("Tanggal : Invalid");
-//         }else if (tanggal>= 1){
-//             System.out.println(tanggal+"/03/2022");
-//         }else{
-//             System.out.println("Tanggal : Invalid");
-//         }
-//         if(masuk >24){
-//             System.out.println("Jam : Invalid");
-//         }else if(masuk>=1){
-//             System.out.println("");
-//         }else{
-//             System.out.println("Format Invalid");
-//         }
-//         if(keluar >24){
-//             System.out.println("Jam : Invalid");
-//         }else if(keluar>=1){
-//             System.out.println("");
-//         }else{
-//             System.out.println("Format Invalid");
-//         }
-
+        
         switch(TypeVehicle){
             case(1) : System.out.println("Kendaraan Anda Roda 4 (Mobil) " );
             break;
