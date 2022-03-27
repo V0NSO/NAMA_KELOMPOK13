@@ -64,6 +64,9 @@ public class Main {
             break;
         }
         end();
+        Method objek = new Method();
+        String print = objek.peringatan("GANDA=======");
+        System.out.println(print);
     }
 
 
