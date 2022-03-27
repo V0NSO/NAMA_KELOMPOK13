@@ -7,7 +7,7 @@ public class Main {
 
     //Function non-parameter
     static void end(){
-        System.out.println("\n==========Terimakasih============\n"+"==========Selamat Jalan==========");
+        System.out.println("\n==============Terimakasih================\n"+"==============Selamat Jalan==============");
     }
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
@@ -16,7 +16,7 @@ public class Main {
         while(true){
             System.out.println("==================PT.DKP==================");
             System.out.println("==============Parking Ticket==============");
-            System.out.println("==========================================");
+            System.out.println("==========================================\n");
             
             System.out.print("Input Kendaraan Anda (1.Mobil)(2.Motor) : ");
             TypeVehicle = input.nextInt();
@@ -65,7 +65,7 @@ public class Main {
         }
         end();
         Method objek = new Method();
-        String print = objek.peringatan("GANDA=======");
+        String print = objek.peringatan("KUNCI GANDA========");
         System.out.println(print);
     }
 
