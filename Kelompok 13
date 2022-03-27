@@ -5,4 +5,7 @@ public class Main {
       //Output
       System.out.println("Huruf pertama adalah " + value);
       
+      System.out.println("Imada Kelompok 3");
+      
+      
 }
