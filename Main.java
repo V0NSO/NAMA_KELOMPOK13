@@ -13,56 +13,68 @@ public class Main {
         Scanner input = new Scanner(System.in);
         int TypeVehicle,masuk,keluar,total,tanggal;
 
+        while(true){
+            System.out.println("==================PT.DKP==================");
+            System.out.println("==============Parking Ticket==============");
+            System.out.println("==========================================");
+            
+            System.out.print("Input Kendaraan Anda (1.Mobil)(2.Motor) : ");
+            TypeVehicle = input.nextInt();
 
+            System.out.print("Tanggal : ");
+            tanggal= input.nextInt();
 
-
-        System.out.println("==================PT.DKP==================");
-        System.out.println("==============Parking Ticket==============");
-        System.out.println("==========================================");
-        System.out.println("Input Kendaraan Anda (1.Mobil)(2.Motor) : ");
-        TypeVehicle = input.nextInt();
-
-        System.out.println("Tanggal : ");
-        tanggal= input.nextInt();
-
-
-        System.out.println("Jam Masuk (1-24) : ");
-        masuk = input.nextInt();
-        System.out.println("Jam Keluar (1-24) : ");
-        keluar = input.nextInt();
-
+            System.out.print("Jam Masuk (1-24) : ");
+            masuk = input.nextInt();
+            System.out.print("Jam Keluar (1-24) : ");
+            keluar = input.nextInt();
+            
+            if (TypeVehicle >= 1 && TypeVehicle <= 2 ) {
+                if (tanggal >= 1 && tanggal <= 31) {
+                    if (masuk >= 1 && masuk <= 24) {
+                        if (keluar >= 1 && keluar <= 24) {
+                            break;
+                        }
+                    }
+                }
+            }
+            System.out.println("Data yang anda masukkan tidak valid\nSilahkan coba lagi\n\n");
+        }
 
         total = (keluar-masuk);
-
-        System.out.println("\n*Jika Harga (-) Format Input Jam Salah");
+        if (total <= 0) {
+            total = total + 24;
+        }
+        
+//         System.out.println("\n*Jika Harga (-) Format Input Jam Salah");
         if(TypeVehicle==1){
             System.out.println("Harga: "+total*3+"000");
         } else if (TypeVehicle==2) {
             System.out.println("Harga: "+total*2+"000");
         }
 
-
-        if(tanggal> 31){
-            System.out.println("Tanggal : Invalid");
-        }else if (tanggal>= 1){
-            System.out.println(tanggal+"/03/2022");
-        }else{
-            System.out.println("Tanggal : Invalid");
-        }
-        if(masuk >24){
-            System.out.println("Jam : Invalid");
-        }else if(masuk>=1){
-            System.out.println("");
-        }else{
-            System.out.println("Format Invalid");
-        }
-        if(keluar >24){
-            System.out.println("Jam : Invalid");
-        }else if(keluar>=1){
-            System.out.println("");
-        }else{
-            System.out.println("Format Invalid");
-        }
+        System.out.println(tanggal+"/03/2022");
+//         if(tanggal> 31){
+//             System.out.println("Tanggal : Invalid");
+//         }else if (tanggal>= 1){
+//             System.out.println(tanggal+"/03/2022");
+//         }else{
+//             System.out.println("Tanggal : Invalid");
+//         }
+//         if(masuk >24){
+//             System.out.println("Jam : Invalid");
+//         }else if(masuk>=1){
+//             System.out.println("");
+//         }else{
+//             System.out.println("Format Invalid");
+//         }
+//         if(keluar >24){
+//             System.out.println("Jam : Invalid");
+//         }else if(keluar>=1){
+//             System.out.println("");
+//         }else{
+//             System.out.println("Format Invalid");
+//         }
 
         switch(TypeVehicle){
             case(1) : System.out.println("Kendaraan Anda Roda 4 (Mobil) " );
@@ -76,5 +88,5 @@ public class Main {
     }
 
 
-    }
+}
 
