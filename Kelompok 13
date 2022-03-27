@@ -6,6 +6,6 @@ public class Main {
       System.out.println("Huruf pertama adalah " + value);
       
       System.out.println("Imada Kelompok 3");
-      
+      System.out.println("test");
       
 }
