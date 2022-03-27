@@ -4,5 +4,5 @@ public class Main {
       char value = 'a';
       //Output
       System.out.println("Huruf pertama adalah " + value);
-      
+      String a = "test";
 }
